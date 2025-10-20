@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: VP_UAE_DEMO01Project
+  gitServerName: VP_WMIO_GIT
+  gitUrl: https://github.com/v1adp0s2-wmio
+  gitUsername: v1adp0s2-wmio
+  gitBranch: main
