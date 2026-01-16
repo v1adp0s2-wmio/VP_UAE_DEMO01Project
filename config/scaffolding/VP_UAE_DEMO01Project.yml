@@ -8,12 +8,60 @@ packages:
   gitUsername: v1adp0s2-wmio
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: DemoUtils
+  gitServerName: VP_WMIO_GIT
+  gitUrl: https://github.com/v1adp0s2-wmio
+  gitUsername: v1adp0s2-wmio
+  gitBranch: main
 services:
 - serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: VP_UAE_DEMO01Project
+    version: "1.0"
+  - name: DemoUtils
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetEmpployee
+  packages:
+  - name: VP_UAE_DEMO01Project
+    version: "1.0"
+  - name: DemoUtils
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getAccount
+  packages:
+  - name: VP_UAE_DEMO01Project
+    version: "1.0"
+  - name: DemoUtils
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.vp_uae_demo01.integrations:GetEmployee
+  packages:
+  - name: VP_UAE_DEMO01Project
+    version: "1.0"
+  - name: DemoUtils
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.vp_uae_demo01.integrations:getAccounts
+  packages:
+  - name: VP_UAE_DEMO01Project
+    version: "1.0"
+  - name: DemoUtils
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
