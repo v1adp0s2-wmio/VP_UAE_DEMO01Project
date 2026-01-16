@@ -156,7 +156,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Vladimir.Postu@ibm.com</value>
-    <value name="lastModifiedDate">1768544872220</value>
+    <value name="lastModifiedDate">1768545361970</value>
     <value name="displayName">GetEmployee</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -218,6 +218,27 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">DemoUtils</value>
+          <value name="groupName">DemoUtils;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">demo.utils.services:base64ToBinary</value>
+          <value name="serviceName">demo.utils.services:base64ToBinary</value>
+          <value name="displayName">base64ToBinary</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
       </record>
     </record>
   </record>
