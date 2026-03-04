@@ -156,7 +156,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Vladimir.Postu@ibm.com</value>
-    <value name="lastModifiedDate">1768545361970</value>
+    <value name="lastModifiedDate">1772630033016</value>
     <value name="displayName">GetEmployee</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -239,6 +239,8 @@
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1</value>
       </record>
     </record>
   </record>
