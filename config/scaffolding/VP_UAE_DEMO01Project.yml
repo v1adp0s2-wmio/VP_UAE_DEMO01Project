@@ -12,21 +12,12 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: DemoUtils
+  version: "1.0"
   gitServerName: VP_WMIO_GIT
   gitUrl: https://github.com/v1adp0s2-wmio
   gitUsername: v1adp0s2-wmio
   gitBranch: main
 services:
-- serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
-  packages:
-  - name: VP_UAE_DEMO01Project
-    version: "1.0"
-  - name: DemoUtils
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
 - serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetEmpployee
   packages:
   - name: VP_UAE_DEMO01Project
@@ -57,6 +48,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: demo.utils.services:validateResult
+  packages:
+  - name: DemoUtils
+    version: "1.0"
 - serviceName: project.vp_uae_demo01.integrations:getAccounts
   packages:
   - name: VP_UAE_DEMO01Project
@@ -93,7 +88,7 @@ configurationVariables:
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : sa
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}3Q/DheX9dMA8VOnPUYxzL5UbwnlY3BVjnHcvc4175mk="
+  : "{AES}SCgm5WaE2z5RCbVeg3kPwQ=="
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : wm-demo
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
