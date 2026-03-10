@@ -11,17 +11,18 @@
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
     <value name="DemoUtils">1.0</value>
+    <value name="WmSalesforceMarketingCloudProvider">10.5.0.0.37</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">40</value>
+  <value name="build">41</value>
   <null name="description"/>
   <value name="created_date">20-10-2025 09:21:47 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-04T13:24:09.944960895Z</value>
+  <value name="lastUpdated">2026-03-10T06:46:39.31997331Z</value>
   <value name="wmProjectId">fl163fdaca30407630315ffb</value>
   <value name="creator">Vladimir Postu</value>
 </Values>

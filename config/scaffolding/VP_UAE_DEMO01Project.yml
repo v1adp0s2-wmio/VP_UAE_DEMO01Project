@@ -17,6 +17,9 @@ packages:
   gitUrl: https://github.com/v1adp0s2-wmio
   gitUsername: v1adp0s2-wmio
   gitBranch: main
+- name: WmSalesforceMarketingCloudProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 services:
 - serviceName: project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetEmpployee
   packages:
@@ -63,44 +66,38 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MSSQL
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : poc-mssql
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
-  : sa
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}SCgm5WaE2z5RCbVeg3kPwQ=="
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : wm-demo
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
-  : "1000"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "1433"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : sa
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MSSQL
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
@@ -109,3 +106,9 @@ configurationVariables:
   : ""
   ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}SCgm5WaE2z5RCbVeg3kPwQ=="
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : wm-demo
+  ? artConnection.VP_UAE_DEMO01Project.project.vp_uae_demo01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
